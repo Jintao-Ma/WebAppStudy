@@ -1,0 +1,22 @@
+- Item
+
+    ItemGuid            Guid PK
+    Name                Nvchar
+    Description         Nvchar
+
+- Item_Attachment
+    
+    ItemGuid            Guid PK
+    AttachmentGuid      Guid PK
+
+- Attachment
+
+    AttachmentGuid      Guid PK
+    AttachmentTypeId    Int
+    FilePath            Nvchar
+    IsProfile           Bit
+
+- AttachmentType
+
+    AttachmentTypeId    Int PK
+    TypeName            Nvchar
